@@ -1,0 +1,128 @@
+/*----------------------WRAPPER----------------------*/
+.wrapper{
+    margin: 0px auto;
+    padding: 0px;
+}
+.wrapper.sm{
+    max-width:768px;
+}
+.wrapper.md{
+    max-width: 1024px;
+}
+.wrapper.lg{
+    max-width: 1440px;
+}
+.wrapper.fw{
+    
+}
+.page-wrapper{
+}
+.header-nav{
+    background-color: #2d4571;
+}
+.full-span{
+    width: 100%;
+}
+
+/*----------------------NAV-COLLAPSE----------------------*/
+.nav-bar.primary>ul{
+    justify-content: space-between;
+    text-align: center;
+    background-color: #2d4571;
+    display: flex;
+}
+.nav-bar.primary>ul li{
+    max-width: 24%;
+    background-color: #2d4571;
+}
+.nav-collapse ul a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 35px;
+    padding: 15px 0;
+    transition: 0.5s;
+}
+.nav-collapse ul a:hover{
+    background-color: #48669c;
+}
+.nav-toggle{
+    display: block;
+    background-color: #fff;
+}
+
+/*----------------------MAIN-CONTENT----------------------*/
+.row{
+    display: flex;
+}
+.hero-img-div{
+    background-image: url(../img/space-hero-big.jpg);
+    height: 600px;
+    background-position: top;
+}
+.other-sites>div{
+    justify-content: space-around;
+}
+.other-sites>div>div{
+    margin: 20px 5%;
+    background-color: #2d4571;
+}
+.full-span{
+    padding: 15px 0;
+}
+.other-sites{
+    background-color: #4f6389;
+}
+.other-sites h2{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    background-color: #2d4571;
+    padding: 5px
+    
+}
+.other-sites h3{
+    width: 30%;
+    padding: 10px;
+}
+.other-sites>div>div a{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    font-size: 30px;
+    color: #fff;
+    display: flex;
+    transition: color 0.5s, background-color 0.5s;
+    text-align: center;
+}
+.other-sites>div>div a:hover{
+    background-color: #48669c;
+}
+.site-img-container{
+    width: 70%;
+    background-image: url(../img/space-hero-big.jpg)
+}
+.twitter-feed{
+    background-color: #4f6389;
+}
+.twitter-feed>div{
+    max-height: 600px;
+    overflow-y: scroll;
+    
+}
+.twitter-timeline{
+    background-color: #fff;
+}
+/*----------------------FOOTER----------------------*/
+footer{
+    text-align: center;
+    background-color: #172846;
+}
+footer div{
+    background-color: #172846;
+}
+footer p{
+    color: #fff;
+    padding: 20px 0;
+    font-size: 20px;
+}

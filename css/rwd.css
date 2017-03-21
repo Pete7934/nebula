@@ -1,0 +1,34 @@
+@media screen and (max-width: 768px){
+    header>div{
+        
+    }
+    .nav-bar.primary{
+        margin-left: auto;
+    }
+    .hero-img-div{
+        height: 400px;
+        background-position: center;
+        background-size: cover;
+    }
+    .nav-bar.primary>ul{
+        display: block;
+        width: 100%;
+    }
+    .nav-bar.primary>ul li{
+        max-width: 100%;
+    }
+    .nav-collapse ul a{
+        font-size: 30px;
+        padding: 20px 0;
+    }
+    .nav-toggle{
+        background-color: #2d4571;
+        text-decoration: none;
+        color: #fff;
+        font-size: 30px;
+        text-align: center;
+        padding: 15px 0;
+        display: block;
+    }
+    
+}
