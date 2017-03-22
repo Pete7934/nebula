@@ -1,3 +1,8 @@
+html{
+    
+    font-family: 'Slabo 27px', serif;
+
+}
 /*----------------------WRAPPER----------------------*/
 .wrapper{
     margin: 0px auto;
@@ -42,19 +47,29 @@
     font-size: 35px;
     padding: 15px 0;
     transition: 0.5s;
+    box-shadow: 0;
 }
-.nav-collapse ul a:hover{
+.nav-bar a:hover{
     background-color: #48669c;
+    box-shadow: 2px 2px 5px 5px #222 inset;
 }
 .nav-toggle{
     display: block;
     background-color: #fff;
+}
+.nav-toggle.active a{
+    transition: 0.5s;
+    box-shadow: 0;
 }
 
 /*----------------------MAIN-CONTENT----------------------*/
 .row{
     display: flex;
 }
+.full-span{
+    padding: 15px 0;
+}
+/*----------------------FRONT-PAGE----------------------*/
 .hero-img-div{
     background-image: url(../img/space-hero-big.jpg);
     height: 600px;
@@ -67,9 +82,7 @@
     margin: 20px 5%;
     background-color: #2d4571;
 }
-.full-span{
-    padding: 15px 0;
-}
+
 .other-sites{
     background-color: #4f6389;
 }
@@ -83,7 +96,8 @@
 }
 .other-sites h3{
     width: 30%;
-    padding: 10px;
+    padding: 25px 10px;
+    font-size: 40px;
 }
 .other-sites>div>div a{
     text-decoration: none;
@@ -102,6 +116,51 @@
     width: 70%;
     background-image: url(../img/space-hero-big.jpg)
 }
+.slide-show>div>div{
+    margin: 0;
+    background-color: #172846;
+    display: flex;
+    flex-direction: row;
+}
+.slide-show>div>div div:first-child{
+    width: 70%;
+    max-height: 500px;
+    position: relative;
+}
+.slide-show>div>div>div img:first-child{
+    width: 100%;
+}
+.slide-show>div>div>div:nth-child(2){
+    width: 40%;
+}
+.arrow{
+    position: absolute;
+    opacity: 0.8;
+}
+.arrow.left{
+    top: 40%;
+    height: 20%;
+    bottom: 50%;
+    left: 2px;
+}
+.arrow.right{
+    top: 40%;
+    height: 20%;
+    right: 2px;
+}
+.slide-show>div>div p, .slide-show>div>div h3{
+    color: #fff;
+}
+.slide-show>div>div p{
+    line-height: 1.2;
+    font-size: 18px;
+    padding: 5px;
+}
+.slide-show>div>div h3{
+    font-size: 32px;
+    font-weight: bolder;
+    padding: 5px;
+}
 .twitter-feed{
     background-color: #4f6389;
 }
@@ -112,6 +171,42 @@
 }
 .twitter-timeline{
     background-color: #fff;
+}
+/*----------------------TIDSLINJE----------------------*/
+.tids-boks-main{
+    padding: 10px 0;
+    margin: 10px 0;
+}
+.tids-boks-top{
+    display: flex;
+    margin: 0 10px;
+    transition: 1s;
+    background-color: #4f6389;
+}
+.tids-boks-top h1{
+    font-size: 35px;
+    padding: 10px;
+    color: #eee;
+}
+.tids-boks-top h2{
+    font-size: 25px;
+    padding: 15px 0px;
+}
+.tids-boks-bund{
+    display: none;
+    margin: 0 10px;
+    border: 4px solid #4f6389;
+}
+
+.tids-boks-bund div:first-child{
+    width: 60%;
+}
+.tids-boks-bund img{
+    width: 100%;
+}
+
+.is-visible{
+    display: block;
 }
 /*----------------------FOOTER----------------------*/
 footer{
