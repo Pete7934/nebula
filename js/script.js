@@ -16,3 +16,4 @@ for (var i = 0; i < box.length; i++){
         e.target.classList.toggle("is-visible");
     });
 }
+

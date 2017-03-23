@@ -1,7 +1,11 @@
+*{
+    color: #fff;
+}
 html{
-    
     font-family: 'Slabo 27px', serif;
-
+}
+.clear{
+    clear: both;
 }
 /*----------------------WRAPPER----------------------*/
 .wrapper{
@@ -41,7 +45,6 @@ html{
     background-color: #2d4571;
 }
 .nav-collapse ul a{
-    color: #fff;
     text-decoration: none;
     display: block;
     font-size: 35px;
@@ -75,6 +78,11 @@ html{
     height: 600px;
     background-position: top;
 }
+.logo-div>img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
 .other-sites>div{
     justify-content: space-around;
 }
@@ -88,7 +96,6 @@ html{
 }
 .other-sites h2{
     text-align: center;
-    color: #fff;
     font-size: 40px;
     background-color: #2d4571;
     padding: 5px
@@ -97,14 +104,13 @@ html{
 .other-sites h3{
     width: 30%;
     padding: 25px 10px;
-    font-size: 40px;
+    font-size: 35px;
 }
 .other-sites>div>div a{
     text-decoration: none;
     display: block;
     width: 100%;
     font-size: 30px;
-    color: #fff;
     display: flex;
     transition: color 0.5s, background-color 0.5s;
     text-align: center;
@@ -148,9 +154,6 @@ html{
     height: 20%;
     right: 2px;
 }
-.slide-show>div>div p, .slide-show>div>div h3{
-    color: #fff;
-}
 .slide-show>div>div p{
     line-height: 1.2;
     font-size: 18px;
@@ -167,20 +170,21 @@ html{
 .twitter-feed>div{
     max-height: 600px;
     overflow-y: scroll;
-    
 }
 .twitter-timeline{
     background-color: #fff;
 }
 /*----------------------TIDSLINJE----------------------*/
+.stjerner{
+    background-image: url(../img/tidslinje-baggrund.jpg)
+}
 .tids-boks-main{
-    padding: 10px 0;
-    margin: 10px 0;
+    padding: 0 0;
+    margin: 5px 0;
 }
 .tids-boks-top{
     display: flex;
     margin: 0 10px;
-    transition: 1s;
     background-color: #4f6389;
 }
 .tids-boks-top h1{
@@ -200,13 +204,121 @@ html{
 
 .tids-boks-bund div:first-child{
     width: 60%;
+    padding: 0;
+    
+}
+.tids-boks-bund>div:nth-child(2){
+    width: 40%;
+    padding: 10px;
+}
+.tids-boks-bund>div:nth-child(2) h2{
+    font-size: 30px;
+}
+.tids-boks-bund>div:nth-child(2) p{
+    font-size: 18px;
+    line-height: 1.3;
+    margin-top: 4px;
 }
 .tids-boks-bund img{
     width: 100%;
+    display: block;
+}
+.tids-boks-bund div{
+    background-color: #142c59;
+}
+.year-mark{
+    font-size: 80px;
+    text-align: center;
+    font-weight: bolder;
+    margin: 10px 0;
+}
+.is-visible+.child-visible{
+    display: flex;
+}
+/*----------------------UDFORSK----------------------*/
+.udforsk-list{
+    width: 16%;
+    display: block;
+    text-align: center;
+}
+.main-list li{
+    background-color: #999;
+    padding: 10px;
+}
+.main-list ul li:first-child{
+    background-color: #48669c;
+    border-top: 3px solid #142c59;
+}
+.udforsk-box{
+    width: 80%;
+    background-color: #48669c;
 }
 
-.is-visible{
+
+
+
+
+.main-list li+li{
+    display: none;
+}
+.main-list ul .show-list~li{
+    display: block ;
+}
+
+/*----------------------OM OS----------------------*/
+.kontakt, .aboutus{
+    background-image: url(../img/tidslinje-baggrund.jpg);
+}
+.aboutus>div{
+    background-color: #48669c;
+    padding: 5px;
+    line-height: 1.2;
+}
+.aboutus>div img{
+    margin-right: 5px;
+    width: 100%;
+}
+.aboutus>div>div:first-child{
+    float: left;
+    max-width: 40%;
+}
+.aboutus>div h2{
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.kontakt>div{
+    background-color: #48669c;
+    padding: 10px;
+}
+.kontakt>div h2{
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #48669c;
+    padding: 10px;
+}
+.kontakt>div>div{
+    margin-top: 5px;
+}
+.kontakt form{
+    display: flex;
+    flex-direction: column;
+}
+.kontakt form input{
+    max-width: 50%;
+    margin: 4px;
+}
+textarea{
+    min-height: 200px;
+}
+.kontakt a{
+    padding: 10px;
     display: block;
+    max-width: 40px;
+    font-size: 19px;
+    text-decoration: none;
+    background-color: #2d4571;
+    border-radius: 4px;
+    margin-top: 5px;
 }
 /*----------------------FOOTER----------------------*/
 footer{
@@ -217,7 +329,6 @@ footer div{
     background-color: #172846;
 }
 footer p{
-    color: #fff;
     padding: 20px 0;
     font-size: 20px;
 }
