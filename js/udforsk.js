@@ -16,7 +16,7 @@ branch = document.getElementsByClassName('udforsk');
             clearDisplay(temp);
         });
     }
-}
+
 function clearDisplay(temp){
     var content = document.getElementsByClassName("content");
     for(var i = 0; i < content.length; i++){
@@ -28,4 +28,5 @@ function clearDisplay(temp){
             content[i].style.display = "none";
         }
     }
+}
 }
